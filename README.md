@@ -61,13 +61,12 @@ cd teamgram-server
 
 - Build
 ```
-cd scripts
-./build.sh
+./scripts/build.sh
 ```
 
 - Run
 ```
-cd ../teamgramd/bin
+cd teamgramd/bin
 ./runall2.sh
 ```
 
