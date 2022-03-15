@@ -5,7 +5,7 @@ RUN ./scripts/build.sh
 
 FROM ubuntu:latest
 WORKDIR /app
-RUN apt update && apt install ffmpeg
+RUN apt update -y && apt install -y ffmpeg
 COPY --from=builder /app/teamgramd/ /app/
 ENTRYPOINT /app/docker/entrypoint.sh
 
